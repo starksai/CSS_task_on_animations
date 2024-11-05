@@ -1,0 +1,58 @@
+img{
+    display: block;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+body{
+    background-color: blanchedalmond;
+    animation: BGcolor 4s ease-in-out infinite ;
+}
+
+@keyframes BGcolor{
+    0%{
+        background-color: rgb(244, 176, 76);
+    }
+    50%{
+        background: linear-gradient(to left , rgb(158, 245, 158),rgb(255, 202, 103), rgb(239, 239, 100));
+    }
+    100%{
+        background-color: rgb(136, 245, 255);
+    }
+}
+
+.img-xaxis{
+    transform: translate(15rem);
+    animation: xaxis 4s ease-in-out infinite;
+}
+
+@keyframes xaxis{
+    0%{
+        transform: translatex(15rem) rotate(0deg);
+
+    }
+    50%{
+        transform: translatex(70rem) rotate(180deg);
+    }
+    100%{
+        transform: translatex(15rem) rotate(360deg);
+    }
+}
+
+.img-yaxis{
+    animation: yaxis 4s ease-in-out infinite;
+}
+
+@keyframes yaxis{
+    0%{
+        transform: translatey(0rem) rotate(0deg);
+
+    }
+    50%{
+        transform: translatey(27rem) rotate(180deg);
+    }
+    100%{
+        transform: translatey(0rem) rotate(360deg);
+    }
+}

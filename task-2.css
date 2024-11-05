@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+
+}
+.child{
+    width: 600px;
+    height: 600px;
+    background-color: aliceblue;
+    position: static;
+}
+
+.ball{
+    animation: bounce 10s linear infinite;
+    position: absolute;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translate(0px,300px);
+        background-color: bisque;
+    }
+
+    25%{
+        transform: translate(300px,0px);
+        background-color: greenyellow;
+    }
+
+    50%{
+        transform: translate(570px,300px);
+        background-color: aqua;
+    }
+
+    75%{
+        transform: translate(300px,585px);
+        background-color: rgb(240, 159, 159);
+    }
+
+    100%{
+        transform: translate(0px,300px);
+        background-color: bisque;
+    }
+
+
+}
+
+
